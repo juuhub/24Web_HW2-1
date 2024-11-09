@@ -39,6 +39,7 @@
         </tbody>
     </table>
 
+    <a href="write.jsp" class="btn btn-primary">Create Another User</a>
     <a href="list.jsp" class="btn btn-primary">Return to home</a>
 </div>
 </body>
