@@ -5,7 +5,7 @@
   Time: 오후 10:28
   To change this template use File | Settings | File Templates.
 --%>
-<%@ include file="../header.jsp"%>
+<%@ include file="header.jsp"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,10 +39,9 @@
         </tbody>
     </table>
 
-    <a href="write.jsp" class="btn btn-primary">Create Another User</a>
     <a href="list.jsp" class="btn btn-primary">Return to home</a>
 </div>
 </body>
 </html>
 
-<%@ include file="../footer.jsp"%>
+<%@ include file="footer.jsp"%>

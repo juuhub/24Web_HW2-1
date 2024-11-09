@@ -5,7 +5,7 @@
   Time: 오후 9:20
   To change this template use File | Settings | File Templates.
 --%>
-<%@ include file="../header.jsp"%>
+<%@ include file="header.jsp"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +63,7 @@
             <td><%= phone %></td>
             <td>
                 <!-- 편집, 보기, 삭제 버튼 -->
-                <a href="./edit.jsp" class="btn btn-primary btn-sm">
+                <a href="edit.jsp" class="btn btn-primary btn-sm">
                     <i class="fa fa-pencil-alt"></i> Edit
                 </a>
                 <a href="./view.jsp" class="btn btn-info btn-sm">
@@ -88,19 +88,8 @@
 <script>
     function handleDelete(id) {
         if (confirm('Are you sure you want to delete this user?')) {
-            // 삭제 요청을 서버에 보냄
-            fetch('/delete-user/' + id, {
-                method: 'DELETE',
-            }).then(response => {
-                if (response.ok) {
-                    alert('User deleted successfully');
-                    location.reload();  // 삭제 후 페이지 새로고침
-                } else {
-                    alert('Error deleting user');
-                }
-            }).catch(error => {
-                alert('Error: ' + error.message);
-            });
+            // delete_ok.jsp로 이동하며, id를 URL 파라미터로 전달
+            window.location.href = 'delete_ok.jsp?id=' + id;
         }
     }
 </script>
@@ -108,4 +97,4 @@
 </body>
 </html>
 
-<%@ include file="../footer.jsp"%>
+<%@ include file="footer.jsp"%>

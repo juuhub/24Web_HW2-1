@@ -5,7 +5,7 @@
   Time: 오후 10:41
   To change this template use File | Settings | File Templates.
 --%>
-<%@ include file="../header.jsp"%>
+<%@ include file="header.jsp"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -98,5 +98,5 @@
     </form>
 </div>
 </body>
-<%@ include file="../footer.jsp"%>
+<%@ include file="footer.jsp"%>
 </html>
