@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./write.jsp">Create User</a>
+                        <a class="nav-link" href="write.jsp">Create User</a>
                     </li>
                 </ul>
             </div>
