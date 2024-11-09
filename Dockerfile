@@ -1,5 +1,5 @@
 FROM tomcat:9.0
 
-ADD war/*.war /usr/local/tomcat/webapps/
+COPY src/main/webapp /usr/local/tomcat/webapps/jspcrud/
 
 CMD ["catalina.sh", "run"]
